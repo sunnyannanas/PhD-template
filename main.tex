@@ -77,7 +77,7 @@ headsepline=true,
 
 %=========== Acronyms on Hover ===========
 \usepackage{pdfcomment}
-\usepackage{acronym}
+\usepackage[nohyperlinks,printonlyused]{acronym}
 \NewCommandCopy\originalacs\acs
 \renewcommand\acs[1]{\pdftooltip{\originalacs{#1}}{\acl{#1}}}
 \NewCommandCopy\originalacsp\acsp

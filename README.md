@@ -68,7 +68,7 @@ latexmk -pdf main.tex
 
 ## Acronyms
 
-Acronyms are defined in `0.7_Definitions.tex` and managed by the `acronym` package. The template also uses `pdfcomment` to add hover tooltips to abbreviations in the PDF.
+Acronyms are defined in `0.7_Definitions.tex` and managed by the `acronym` package with `[nohyperlinks,printonlyused]`. The template also uses `pdfcomment` to add hover tooltips to abbreviations in the PDF.
 
 | Command | Behaviour |
 |---|---|
@@ -83,7 +83,7 @@ To add a new acronym, add a line to the `acronym` environment in `0.7_Definition
 \acro{XYZ}{Your Full Expansion Here}
 ```
 
-The template ships with acronyms relevant to machine learning and data science research. Remove any that are not relevant to your work.
+The template ships with pre-configured acronyms relevant to machine learning and data science research. Because `printonlyused` is enabled, only the acronyms you actually cite in your thesis body will appear in the compiled Definitions list.
 
 ## Appendix
 
@@ -125,7 +125,6 @@ The bibliography heading is renamed to "References" via `\renewcommand{\bibname}
 
 ## Notes on Compilation Warnings
 
-- **Undefined hyper references for acronyms** — these appear on the first pass because the definitions page comes after the front matter in the compiled order. They resolve on the second pass.
 - **Label(s) may have changed / Rerun** — standard LaTeX behaviour; run pdflatex twice or use latexmk.
 - **fancyhdr with KOMA-Script** — a known compatibility warning. The header/footer functionality works correctly; the warning can be suppressed by switching to `scrlayer-scrpage` if desired.
 
