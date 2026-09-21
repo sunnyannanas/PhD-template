@@ -1,0 +1,66 @@
+# Old/unused assets
+z_old_figures/
+zz müll/
+
+# LaTeX temporary/auxiliary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.synctex.gz
+*.synctex(busy)
+*.out
+*.nav
+*.snm
+*.vrb
+*.fls
+*.fdb_latexmk
+*.upa
+*.upb
+*.bcf
+*.run.xml
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.xdy
+*.toc.old
+*.brf
+*.lol
+*.dvi
+*.ps
+*.synctex
+.texpadtmp/
+_minted-*/
+
+# Compile script temp
+compile_output.log
+
+# Editor / OS / IDE files
+.DS_Store
+**/.DS_Store
+*.swp
+*~
+Thumbs.db
+.vscode/
+.idea/
+*.bak
+
+# Unused references
+unused_references.bib
+
+# Node (used for cspell / bibtex-tidy tooling)
+node_modules/
+package-lock.json
+
+# biber tool-mode artifacts
+*.bib.original
+*_bibertool.bib
